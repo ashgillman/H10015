@@ -17,7 +17,7 @@ with open('candidate_dump.txt', 'r') as raw:
             print('Ignoring: {}'.format(line))
             continue
 
-        if '-' in line:
+        if ' -' in line:
             candidates.append(line)
         else:
             candidates[-1] += ' ' + line
