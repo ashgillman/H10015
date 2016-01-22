@@ -22,7 +22,7 @@ with open('candidate_dump.txt', 'r') as raw:
         else:
             candidates[-1] += ' ' + line
 
-    candidates = [[s.strip() for s in c.split('-')]
+    candidates = [[s.strip() for s in c.split(' - ')]
                   for c in candidates]
 
     with open('candidates.csv', 'w', newline='') as csv_file:
